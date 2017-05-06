@@ -1,19 +1,44 @@
 .thumbnail {
     box-sizing: border-box;
     border: 0.5em solid #b80000;
-    background: #e90000;
+    background: white;
     line-height: 0em;
     float: left;
     width: 16%;
-    min-height: 5em;
-    margin: 0 0.666% 0.666% 0;
+    /*min-height: 5em;*/
+    margin: 0 0.8% 0.8% 0;
+    text-align:center;
 }
-
 .thumbnail:nth-child(6n) {
     margin-right: 0;
 }
 
-/* implement media queries to
-    -  break after 4th thumbnail when width < 1200px
-    -  break after 3rd thumbnail when width < 800px
-*/
+img {
+    max-width:100%;
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+    .thumbnail {
+        width:24.4%;
+    }
+    .thumbnail:nth-child(6n) {
+        margin-right:0.8%;
+    }
+    .thumbnail:nth-child(4n) {
+        margin-right:0;
+    }
+}
+@media (max-width:799px) {
+    .thumbnail {
+        width:32.8%;
+    }
+    .thumbnail:nth-child(3n) {
+        margin-right:0;
+    }
+}
+@media (max-width:200px) {
+    .thumbnail {
+        width:100%;
+        margin:0 0 0.8% 0;
+    }
+}

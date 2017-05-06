@@ -56,7 +56,9 @@ a:hover
 .container
 {
 	margin: 0px auto;
-	width: 1200px;
+	width: 100%;
+	max-width:1200px;
+	min-width:400px;
 }
 
 /*********************************************************************************/
@@ -78,7 +80,7 @@ a:hover
 .image-full
 {
 	display: block;
-	width: 100%;
+	max-width: 100%;
 	margin: 0 0 2em 0;
 }
 
@@ -450,11 +452,11 @@ ul.contact li a.icon-rss:before
 	text-align: center;
 }
 
-#menu li a, #menu li span
+#menu li a, #menu li span, .menu-trigger a
 {
 	display: inline-block;
 	margin-left: 1px;
-	padding: 1em 1.5em 1em 1.5em;
+	padding: 1em;
 	letter-spacing: 0.10em;
 	text-decoration: none;
 	font-size: 1em;
@@ -467,11 +469,15 @@ ul.contact li a.icon-rss:before
 {
 }
 
-#menu .current_page_item a
+#menu .current_page_item a, .menu-trigger a
 {
 	background: #1757ae;
 	border-radius: 30px;
 	color: #FFF;
+}
+.menu-trigger {
+	float:right;
+	display:none;
 }
 
 /*********************************************************************************/
@@ -493,7 +499,7 @@ ul.contact li a.icon-rss:before
 #banner
 {
 	overflow: hidden;
-	width: 1000px;
+	width: 100%;
 	text-align: center;
 	color: rgba(255,255,255,.7);
 	font-size: 1.5em;
@@ -560,7 +566,7 @@ ul.contact li a.icon-rss:before
 	#content
 	{
 		float: left;
-		width: 700px;
+		width: 65%;
 	}
 
 /*********************************************************************************/
@@ -570,7 +576,7 @@ ul.contact li a.icon-rss:before
 	#sidebar
 	{
 		float: right;
-		width: 450px;
+		width: 30%;
 	}
 
 	#stwo-col
@@ -592,14 +598,16 @@ ul.contact li a.icon-rss:before
 	#stwo-col .sbox1
 	{
 		float: left;
-		width: 210px;
+		width: 50%;
 	}
 
 	#stwo-col .sbox2
 	{
 		float: right;
-		width: 210px;
+		width: 50%;
 	}
+
+
 
 /*********************************************************************************/
 /* Copyright                                                                     */
@@ -940,4 +948,33 @@ ul.contact li a.icon-rss:before
 .extra2 .ebox2
 {
 	float: right;
+}
+
+@media (max-width:800px) {
+	/* mobile */
+	#content, #sidebar {
+		width: 100%;
+	}
+
+	#sidebar {
+		text-align: center;
+	}
+
+	#menu li {
+		float: none;
+	}
+
+	#menu ul {
+		display: none;
+	}
+
+	.menu-trigger {
+		display: block;
+	}
+}
+@media (min-width:801px) and (max-width:1200px) {
+	#stwo-col .sbox1, #stwo-col .sbox2 {
+		width:100%;
+		text-align:center;
+	}
 }
