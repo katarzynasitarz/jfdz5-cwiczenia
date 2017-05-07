@@ -17,10 +17,6 @@
     color:white;
     text-decoration:underline;
 }
-.nav>li>a {
-    /*padding-left:5px;*/
-    /*padding-right:5px;*/
-}
 .gallery {
     background:black;
     padding:3em 0 0 0;
