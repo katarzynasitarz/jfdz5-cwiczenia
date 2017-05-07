@@ -1,0 +1,41 @@
+.navbar-default {
+    background:red;
+    padding:3em 0;
+    border:none;
+    border-radius:0;
+}
+.navbar-default .navbar-brand {
+    color:white;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:24px;
+}
+.navbar-default .navbar-nav>li>a {
+    color:white;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color:white;
+    text-decoration:underline;
+}
+.nav>li>a {
+    /*padding-left:5px;*/
+    /*padding-right:5px;*/
+}
+.gallery {
+    background:black;
+    padding:3em 0 0 0;
+}
+.gallery figure {
+    margin-bottom:3em;
+}
+.navbar {
+    margin-bottom:0;
+}
+footer {
+    background:black;
+    color:white;
+}
+.follow-us li {
+    display:inline-block;
+    margin:0 20px;
+}
