@@ -967,9 +967,11 @@ ul.contact li a.icon-rss:before
 	#menu ul {
 		display: none;
 	}
-
 	.menu-trigger {
 		display: block;
+	}
+	#menu.expanded ul {
+		display:block;
 	}
 }
 @media (min-width:801px) and (max-width:1200px) {
@@ -978,3 +980,5 @@ ul.contact li a.icon-rss:before
 		text-align:center;
 	}
 }
+
+
