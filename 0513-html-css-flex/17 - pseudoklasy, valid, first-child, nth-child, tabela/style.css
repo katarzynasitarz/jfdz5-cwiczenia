@@ -1,0 +1,109 @@
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:not(:focus):invalid {
+    border: 10px solid red;
+}
+
+form {
+    transition: background-color 1s;
+}
+
+form:invalid {
+    background: red;
+}
+
+
+
+
+input:not(#moj_input) {
+    /*wszystkie inputy bez ID moj_input*/
+}
+
+input:not(.moja_klasa) {
+    /*wszystkie inputy bez klasy moja_klasa*/
+}
+
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.menu li {
+    margin: 10px;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li:nth-child(n+4):nth-child(-n+8) {
+    color: red;
+}
+
+tr:nth-child(even) {
+    background: gray;
+}
+
+
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: pink;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: pink;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: pink;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: pink;
+}
+
+
+
+
+
+
+div {
+    width: 150px;
+    height: 150px;
+    background: url(../6/logo.svg) blue;
+}
+
+.moj-div {
+    background-color: yellow;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+@import "mixins";
+@import "variables";
+
+body, h1, h2, p, address, a, button {
+  @extend %nice-fonts;
+}

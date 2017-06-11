@@ -1,0 +1,28 @@
+h1::after {
+    content: "!";
+    color: blue;
+}
+
+h1:hover::after {
+    color: red;
+}
+
+abbr {
+    position: relative;
+}
+
+abbr:hover::before {
+    display: block;
+}
+
+abbr::before {
+    display: none;
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background: gray;
+}
+

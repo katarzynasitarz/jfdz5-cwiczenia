@@ -1,0 +1,61 @@
+@charset "UTF-8";
+main, aside {
+  width: 500px;
+  margin: 0 auto; }
+
+.very-import-text {
+  color: #e6000a; }
+
+ul {
+  margin: 10px; }
+  ul ul {
+    margin: 0; }
+
+li li {
+  font-weight: bolder; }
+
+p.important-text {
+  color: #e6000a;
+  font-size: 105px; }
+
+input[type=text] {
+  border: 2px solid #e6000a; }
+input[type=number] {
+  border: 2px solid green; }
+
+/*pseudoklasy*/
+li li {
+  color: black; }
+li:hover {
+  color: #e6000a; }
+li.selektor-id:hover {
+  color: black;
+  text-transform: uppercase; }
+
+div:target {
+  font-size: 105px; }
+
+/*pseudoelementy*/
+p::first-letter {
+  font-size: 135px; }
+
+::selection {
+  text-shadow: 1px 1px 1px #e6000a;
+  background: blue; }
+
+blockquote {
+  font-size: 60px; }
+
+blockquote[lang=pl]::before {
+  content: "„"; }
+
+blockquote[lang=pl]::after {
+  content: "”"; }
+
+blockquote[lang=de]::before {
+  content: "»"; }
+
+blockquote[lang=de]::after {
+  content: "«"; }
+
+/*# sourceMappingURL=style.css.map */

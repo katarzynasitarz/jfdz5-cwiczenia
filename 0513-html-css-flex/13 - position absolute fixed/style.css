@@ -1,0 +1,15 @@
+header {
+    position: fixed;
+    top: 0;
+}
+
+main {
+    margin: 25px 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background: red;
+    color: white;
+}

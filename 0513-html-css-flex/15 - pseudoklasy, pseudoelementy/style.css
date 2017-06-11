@@ -1,0 +1,335 @@
+
+p.important-text {
+    color: red;
+}
+
+section div {
+    color: blue;
+}
+
+section.important-text {
+
+}
+
+section div.important-text p {
+
+}
+
+li {
+    color: red;
+}
+
+li li {
+    color: pink;
+}
+
+li.klasa > ul > li {
+    color: yellow;
+}
+
+.newsy > div {
+    color: red;
+}
+
+input[type=text] {
+    height: 50px;
+}
+
+[data-tooltip-text] {
+    color: purple;
+    font-size: 25px;
+}
+
+article p:nth-child(4n) {
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div > * {
+    color: red;
+}
+
+input:focus {
+    border: 10px solid red;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+button:active {
+    background-color: red;
+}
+
+p::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    /*color: blue;*/
+}
+
+div::after {
+    content: "!!!!!!";
+    font-size: 25px;
+    color: pink;
+}
+
+.kontener, .tresc {
+    width: 100px;
+    height: 100px;
+}
+
+.kontener {
+    position: relative;
+    overflow: hidden;
+    background-color: red;
+}
+
+.kontener:hover .tresc {
+    transform: translateX(0);
+}
+
+.tresc {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    background-color: blue;
+    color: white;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+}
+
+@media print {
+    p a::before {
+        content: "(" attr(href) ") ";
+    }
+}
+
+h2 > p {
+
+}
+
+/*pierwsze p po h2 (rodzenstwo)*/
+h2 + p {
+    color: red;
+}
+
+/*wszystkie p po h2 (rodzenstwo)*/
+h2 ~ p {
+    color: orange;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: white;
+}
+
+#open_menu_input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-color: black;
+    color: transparent;
+    overflow: hidden;
+}
+
+#open_menu_input:checked + nav {
+    display: block;
+}
+
+blockquote {
+    font-size: 40px;
+}
+
+blockquote[lang=pl]::after {
+    content: "”";
+}
+
+blockquote[lang=pl]::before {
+    content: "„";
+}
+
+blockquote[lang=de]::after {
+    content: "«";
+}
+
+blockquote[lang=de]::before {
+    content: "»";
+}
+
+blockquote[lang=fr]::after {
+    content: "»";
+}
+
+blockquote[lang=fr]::before {
+    content: "«";
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal .content {
+    width: 200px;
+    margin: 0 auto;
+}
+
+main, aside {
+    width: 500px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 10px;
+}
+
+ul ul {
+    margin: 0;
+}
+
+li li {
+    font-weight: bolder;
+}
+
+/*p.important-text {*/
+/*color: red;*/
+/*font-size: 40px;*/
+/*}*/
+
+/*input[type=text] {*/
+/*border: 2px solid red;*/
+/*}*/
+
+/*input[type=number] {*/
+/*border: 2px solid green;*/
+/*}*/
+
+/*section > div {*/
+/*color: red;*/
+/*}*/
+
+/*h2 + p {*/
+/*font-weight: bold;*/
+/*}*/
+
+/*h2 ~ p {*/
+/*color: red;*/
+/*}*/
+
+/*.selektor-element {*/
+/*color: black;*/
+/*transition: color 1s;*/
+/*}*/
+
+/*.selektor-element:hover {*/
+/*color: red;*/
+/*}*/
+
+/*input {*/
+/*transition: border 1s;*/
+/*}*/
+
+/*input:focus {*/
+/*outline: none;*/
+/*border: 10px solid green;*/
+
+/*}*/
+
+/*a {*/
+/*transition: transform 1s;*/
+/*transform: translateY(0);*/
+/*}*/
+
+/*a:active {*/
+/*display: inline-block;*/
+/*transform: translateY(10px);*/
+/*}*/
+
+/*!*otwierane menu*!*/
+/*nav {*/
+/*position: absolute;*/
+
+/*opacity: 0;*/
+/*z-index: -1;*/
+/*transition: opacity 1s, z-index 1s;*/
+/*background: white;*/
+/*}*/
+
+/*input[type=checkbox]:checked + nav {*/
+/*opacity: 1;*/
+/*z-index: 9999999;*/
+/*}*/
+
+/*p::first-letter {*/
+/*font-size: 70px;*/
+/*}*/
+
+/*blockquote::first-line {*/
+/*color: green;*/
+/*}*/
+
+/*::selection {*/
+/*background: blue;*/
+/*}*/
+
+/*article::after {*/
+/*content: url(../6/logo.svg);*/
+/*!*content: "";*!*/
+/*display: block;*/
+/*color: red;*/
+/*border: 2px solid green;*/
+/*padding: 10px;*/
+/*background: yellow;*/
+/*}*/
+
+/*article::before {*/
+/*content: "No hej";*/
+/*}*/
+
+/*:target {*/
+/*font-size: 70px;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

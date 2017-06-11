@@ -1,0 +1,6 @@
+body, h1, h2, p, address, a, button {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision; }
+
+/*# sourceMappingURL=style.css.map */

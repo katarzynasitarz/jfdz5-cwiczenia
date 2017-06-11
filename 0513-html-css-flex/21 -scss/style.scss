@@ -1,0 +1,98 @@
+$color-branding-infoshare: rgb(230, 0, 10);
+$large-font-size: 105px;
+
+main, aside {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.very-import-text {
+    color: $color-branding-infoshare;
+}
+
+
+ul {
+    margin: 10px;
+
+    ul {
+        margin: 0;
+    }
+}
+
+li li {
+    font-weight: bolder;
+}
+
+p.important-text {
+    color: $color-branding-infoshare;
+    font-size: $large-font-size;
+}
+
+input {
+    &[type=text] {
+        border: 2px solid $color-branding-infoshare;
+    }
+
+    &[type=number] {
+        border: 2px solid green;
+    }
+}
+
+
+
+
+
+
+
+/*pseudoklasy*/
+li {
+    li {
+        color: black;
+    }
+    &:hover {
+        color: $color-branding-infoshare;
+    }
+
+    &.selektor-id:hover {
+        color: black;
+        text-transform: uppercase;
+    }
+}
+
+
+div:target {
+    font-size: $large-font-size;
+}
+
+
+
+
+/*pseudoelementy*/
+p::first-letter {
+    font-size: $large-font-size + 30px;
+}
+
+::selection {
+    text-shadow: 1px 1px 1px $color-branding-infoshare;
+    background: blue;
+}
+
+blockquote {
+    font-size: 60px;
+}
+
+blockquote[lang=pl]::before {
+    content: "„";
+}
+
+blockquote[lang=pl]::after {
+    content: "”";
+}
+
+blockquote[lang=de]::before {
+    content: "»";
+}
+
+blockquote[lang=de]::after {
+    content: "«";
+}

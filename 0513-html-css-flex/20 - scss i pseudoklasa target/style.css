@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body {
+  font-size: 10px;
+  color: red; }
+
+ul li {
+  color: red; }
+
+ul li ul li {
+  color: green; }
+
+ul li {
+  color: red; }
+  ul li ul li {
+    color: green; }
+
+section {
+  font-size: 12px; }
+  section h2 {
+    font-size: 30px; }
+  section p {
+    font-size: 18px; }
+
+blockquote {
+  font-size: 40px; }
+  blockquote[lang=pl]::before {
+    content: "„"; }
+  blockquote[lang=pl]::after {
+    content: "”"; }
+  blockquote[lang=de]::before {
+    content: "»"; }
+  blockquote[lang=de]::after {
+    content: "«"; }
+  blockquote[lang=fr]::before {
+    content: "«"; }
+  blockquote[lang=fr]::after {
+    content: "»"; }
+
+ul li {
+  color: rgba(255, 128, 0, 0.5); }
+
+p {
+  color: rgba(255, 128, 0, 0.5);
+  font-size: 40px; }
+  p:hover {
+    color: rgba(255, 128, 0, 0.2); }
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.2s, z-index 0.2s;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.modal-container:target {
+  opacity: 1;
+  z-index: 99; }
+
+.modal {
+  background-color: black;
+  color: white; }
+
+.close-modal:hover {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */

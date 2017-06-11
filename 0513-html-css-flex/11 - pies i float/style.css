@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.sidebar {
+    float: left;
+    width: calc(20% - 2 * 20px);
+    background: red;
+    margin: 0 20px;
+    border: 10px dotted yellow;
+}
+
+.sidebar2 {
+    float: left;
+    width: 20%;
+    background: red;
+}
+
+.content {
+    float: left;
+    width: 60%;
+    background: red;
+}

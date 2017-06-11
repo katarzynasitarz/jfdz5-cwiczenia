@@ -1,0 +1,35 @@
+.column1 {
+    float: left;
+    width: 20%
+}
+
+.column2 {
+    float: left;
+    width:20%;
+}
+
+.content {
+    float: left;
+    width: 60%;
+}
+
+svg:hover #moja_sciezka {
+    fill: yellow;
+    transform: scale(1.05);
+}
+
+/*1. width (sumowac do 100%)*/
+/*2. float: left*/
+/*3. box-sizing: border-box*/
+/*4. zamknac te elementy w rodzicu, ktory ma overflow: auto*/
+
+
+
+
+
+
+
+
+
+
+

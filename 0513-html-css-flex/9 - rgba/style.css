@@ -1,0 +1,26 @@
+div {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+}
+
+.first {
+    left: 50px;
+    background-color: rgba(0, 146, 70, 0.7);
+}
+
+.second {
+    left: 250px;
+    background-color: rgba(241, 242, 241, 0.7);
+}
+
+.third {
+    left: 450px;
+    background-color: rgba(206, 43, 55, 0.7);
+}
+
+
+body {
+    background: url(http://lorempizza.com/700/200) no-repeat;
+}
