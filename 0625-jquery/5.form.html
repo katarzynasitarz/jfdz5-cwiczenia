@@ -5,6 +5,16 @@
 	<title>5.form</title>
 </head>
 <body>
+<script src="lib/jquery-2.1.4.min.js"></script>
+
+<form>
+	<label>
+		<input type="radio" name="option">first
+		<input type="radio" name="option">second
+		<input type="radio" name="option">third
+	</label>
+	<button></button>
+</form>
 
 <script>
 	/*
@@ -20,6 +30,27 @@
 	 6. obsłuż przypadek gdy nie zostałą wybrana żadna pozycja radio komunikatem
 	 "wybierz jedną z opcji"
 	*/
+
+    $( "input[name=option]:nth-child(1)").val('1');
+    $( "input[name=option]:nth-child(2)").val('2');
+    $( "input[name=option]:nth-child(3)").val('3');
+
+$( "button").text("send");
+
+var $p = $('<p>...</p>');
+$('body').prepend($p);
+
+
+$('button').click(function (event) {
+    event.preventDefault();
+    var x = $("input:checked").val();
+    $p.text("wybrałeś wartość " + x);
+	var y = $("input:checked").undefined;
+    $p.text("wybierz jedną z opcji");
+})
+
+
+
 </script>
 
 </body>
