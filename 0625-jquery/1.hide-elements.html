@@ -5,7 +5,7 @@
 	<title>1.hide-elements</title>
 </head>
 <body>
-
+<script src="lib/jquery-2.1.4.min.js"></script>
 <p class="isa" id="p-first">P1 </p>
 <p class="isa">P2 </p>
 <p class="isa">P3 </p>
@@ -22,9 +22,13 @@
 	 3. Ukryj znalezione elementy
 	 4. Sprawdź co znajduje się w zmiennej globalnej (wypisz ją do konsoli)
 	*/
+
+
+var $paragraf =	$('p.isa');
+$paragraf.hide();
+
+
 </script>
-
-
 
 </body>
 </html>
