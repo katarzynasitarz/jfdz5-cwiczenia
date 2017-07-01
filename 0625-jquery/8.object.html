@@ -172,6 +172,28 @@
     var minAge = 30;
 
 
+
+
+people
+	.filter(function(person) {
+        if (person.age >= minAge)
+            return true;
+
+        })
+
+		.forEach(function (person)  {
+
+
+   $('#cards').append(
+			$('<div>').addClass('ppl-card')
+                          .append($('<h1>').addClass('ppl-firstName').text(person.firstName))
+            .append($('<h2>').addClass('ppl-lastName').text(person.lastName))
+            .append($('<h3>').addClass('ppl-age').text(person.age))
+            .append($('<h4>').addClass('ppl-gender').text(person.gender))
+   );
+
+    })
+
 	/*******************************/
 	/*
 
@@ -195,8 +217,7 @@
 
 
 
-    console.log(minAge);
-    console.log(people);
+
 
 </script>
 

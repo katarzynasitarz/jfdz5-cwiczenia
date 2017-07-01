@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<meta charset="UTF-8">
 	<title>7.array</title>
 </head>
@@ -11,13 +12,14 @@
 <script>
 
     var heroes = ["Batman", "Robin", "Freeze", "Riddler"];
+	var $hlist = $('<ul>heroes</ul>');
 
-	/*
-	 Z użyciem jQuery:
-	 1. stwórz listę nienumerowaną <ul>
-	 2. dodaj do listy elementy <li> z tablicy heroes
-	 3. każdemu elementowi listy dodaj klasę css o nazwie "hero"
-	*/
+
+	$('<ul>').appendTo('#heroes');
+	heroes.forEach(function(hero) {
+        $('ul').append($('<li>').text(hero).addClass('hero'));
+    });
+
 
 
 </script>

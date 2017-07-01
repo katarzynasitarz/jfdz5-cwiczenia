@@ -13,9 +13,9 @@
 </head>
 <body>
 <form>
-    <label>Maximum 15 characters</label>
+    <label>Maximum<span class="limit"></span>characters</label>
     <textarea id="textarea"></textarea>
-    <span id="rchars">15</span> Character(s) Remaining
+    <span id="rchars" class="limit"></span> Character(s) Remaining
 </form>
 
 
@@ -23,6 +23,31 @@
     /*
      Ogranicz liczbę znaków możliwych do wpisania w textarea. Po każdym postawionym znaku aktualizuj informację o liczbie pozostałych znaków do użycia
      */
+
+//var txtarea = document.getElementById('textarea').val();
+//var remain = document.getElementById('rchars').val();
+
+//var $txtarea = $('#textarea');
+//var $remain = $('#rchars');
+//
+//
+//$txtarea.keydown(function () {
+//    if ($txtarea.val().length >= 15) {
+//        return false
+//    }
+//})
+//$txtarea.keyup(function() {
+//    $remain.text(15-$txtarea.val().length);
+//})
+
+    var textareaLimit = 15;
+    $('#textarea').attr('maxlength', textareaLimit);
+    $('.limit').text(textareaLimit);
+
+    $('#textarea').keyup(function() {
+        var chars = $(this).val().length
+    $('#rchars').text(textareaLimit - chars);
+    })
 
 
 </script>
